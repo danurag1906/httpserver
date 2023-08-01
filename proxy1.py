@@ -77,7 +77,8 @@ class HTTPServer:
         return headers.encode('utf-8')
 
 def main():
-    HTTPServer('127.0.0.1', 8888)
+    port = 8888
+    HTTPServer('0.0.0.0', port)
 
 if __name__ == "__main__":
     main()
